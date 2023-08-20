@@ -10,8 +10,29 @@ $arr = [
 	'Thana'		=> 'Manda'
 ];
 
+$arg = [
+	'Red', 'Blue', 'Yellow'
+];
+
+$arg2 = [
+	'Red', 'Blue', 'Pick'
+];
+
+$arg3 = [
+	['Red', 'Blue', 'Pink']
+];
+
+$array1 = [
+	"a" => ["green", "red", "blue", "red"]
+];
+$array2 = [
+	"a" => "green", "red", "blue", "Parpal",
+	// "b" => "green", "red", "blue", "red",
+	// "c" => 2,3,6,8,7
+];
 // dd($arr);
 
- $case_arr = array_chunk( $arr, 2 ,true );
+$result = array_diff( $arg, $arg2 );
 
-dd($arr, $case_arr);
+dd($result );
+
