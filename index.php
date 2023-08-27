@@ -34,5 +34,21 @@ $array2 = [
 
 $result = array_diff( $arg, $arg2 );
 
-dd($result );
+// dd($result );
 
+class Parrent{
+	public function myName(){
+		echo "Fazle Bari";
+	}
+}
+
+$P = new Parrent;
+// $P->myName();
+
+class Child extends Parrent{
+	public function myName(){
+		echo "Fazle Bari Sony";
+	}
+}
+$c = new Child;
+// $c->myName();
